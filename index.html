@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC - Aditya Bagri</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="utility.css">
+
+<body>
+    <div class="container flex justify-content">
+        <div class="sidebar">
+            <div class="sideHeader justify-content align-items">
+                <div class="logoContainer flex">
+                    <img src="icons/logo.svg" class="logo">
+                    <div class="crossBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="#636363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 6L18 18" stroke="#636363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>  
+                    </div>
+                </div>
+                <div class="searchbar flex">
+                    <input type="search" name="search" class="searchBox" placeholder="Search">
+                </div>
+                <div class="options">
+                    <ul type="none">
+                        <li class="option flex align-items">
+                            <img src="icons/home.svg" class="icon">
+                            Home
+                        </li>
+                        <li class="option flex align-items"><img src="icons/browse.svg">Browse</li>
+                        <li class="option flex align-items"><img src="icons/radio.svg">Radio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="header flex">
+                <div class="controls flex justify-content align-items">
+                    <div class="hamburger">
+                        <img src="icons/hamburger.svg" id="hamburger" class = "icon">
+                    </div>
+                    <img src="icons/shuffle.svg" id="shuffle" class="icon">
+                    <img src="icons/previous.svg" id="previous" class="previous">
+                    <img src="icons/play.svg" id="play" class="play">
+                    <img src="icons/next.svg" id="next" class="icon">
+                    <img src="icons/loop.svg" id="loop" class="icon">
+                </div>
+                <div class="playhead">
+                    <div class="Track flex jusitfy-content align-items">
+                        <div class="trackImage">
+                            <img src="icons/trackIcon.svg" class="trackicn">
+                        </div>
+                        <div class="trackInfo flex justify-content align-items">
+                            <img src="icons/apple.svg">
+                        </div>
+                        <!-- <div class="trackImage" style="padding: 0">
+                            <img src="covers/Joji - Afterthought.webp" class="trackicn">
+                        </div>
+                        <div class="trackInfo justify-content align-items" style="padding-top: 15px; padding-right: 15px; font-size: 14px;">
+                            <div class="TrackName" style="display: flex; justify-content: center; align-items: center;">Afterthought</div>
+                            <div class="artsistName" style="color: rgb(165, 165, 165); width: 100%;">
+                            <ul type="none" style="display: flex; justify-content: space-between; padding: 10px; height:2px;">
+                                <li class = "currTime">00:00</li>
+                                <li style ="display: inline-block;">Joji</li>
+                                <li class = "totalDuration">03:00</li>
+                            </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="currSeek"></div>
+                </div>
+                <div class="volume flex justify-content align-items">
+                    <img src="icons/volume.svg" class="volumeIcon">
+                    <input type="range" name="volume" class="volumeRange">
+                </div>
+                <div class="queue">
+                    <div class="queueBtn">
+                        <button class="queueBtn">
+                            <img src="icons/queue.svg" class="queueIcon">
+                        </button>
+                    </div>
+                    <div class="signIn">
+                        <button class="signInBtn">
+                            <img src="icons/profile.svg" class="userIcon">
+                            Sign In
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="page">
+                <h1 class="playlists">Songs</h1>
+                <div class="cardContainer flex">
+                    <!-- <div class="card">
+                        <svg class="playBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="rgba(77, 77, 77, 0.8)" />
+                            <polygon points="35,25 35,75 75,50" fill="#fff" />
+                        </svg>
+                        <img src="https://m.media-amazon.com/images/I/A1+bbSF6n3L._AC_UF894,1000_QL80_.jpg"
+                            class="albumCover">
+                        <h3 class="cardTitle">Jackboys</h3>
+                        <p class="cardDesc"> Travis Scott, Sheck Wes, Don Toliver</p>
+                    </div>
+                    <div class="card">
+                        <svg class="playBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="rgba(77, 77, 77, 0.8)" />
+                            <polygon points="35,25 35,75 75,50" fill="#fff" />
+                        </svg>
+                        <img src="https://m.media-amazon.com/images/I/A1+bbSF6n3L._AC_UF894,1000_QL80_.jpg">
+                        <h3 class="cardTitle">Jackboys</h3>
+                        <p class="cardDesc"> Travis Scott, Sheck Wes, Don Toliver</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        All Rights Reserved &copy; to the song owners. <br> This is not an official Apple Music Clone.
+        <br>Just used for educational and experimental purposes
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>

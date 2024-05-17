@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #252526;
+    color: white;
+    font-family: 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    align-items: center;
+}
+
+.sidebar {
+    background-color: #2b2b2d;
+    border-right: 1px solid rgb(46, 46, 46);
+    width: 15vw;
+    height: 100vh;
+    transition: left 0.3s;
+}
+
+.sideHeader {
+    height: 10%;
+}
+
+.logoContainer {
+    padding: 17px 30px 30px 30px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 90px;
+}
+
+.searchBox {
+    margin: auto;
+    width: 90%;
+    /* padding: 6px 44px 6px 13px; */
+    padding:6px;
+    background-color: #252526;
+    border: 0.01px rgb(111, 111, 111) solid;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main {
+    background-color: #252526;
+    width: 85vw;
+    height: 100vh;
+}
+
+.options {
+    padding: 20px 20px 20px 20px;
+    gap: 10px;
+}
+
+.option {
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.main .header {
+    height: 7%;
+    padding: 5px;
+    position: relative;
+    background-color: #2e2e2e;
+    border-bottom: #252526 1px solid;
+}
+
+.controls {
+    width: 30%;
+}
+
+.controls .play {
+    width: 35px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.previous:hover {
+    cursor: pointer;
+}
+
+.play:hover {
+    cursor: pointer;
+    background-color: #2f2f2f;
+    border-radius: 3px;
+}
+
+.controls .previous {
+    transform: scaleX(-1);
+}
+
+.playhead {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    width: 40%
+}
+
+.volume {
+    width: 17%;
+    gap: 10px;
+}
+
+.volume .volumeIcon {
+    width: 10%;
+}
+
+.volume .volumeRange {
+    width: 40%;
+}
+
+.queue {
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Track {
+    height: 99%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.trackImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 10%;
+    height: 95%;
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+}
+
+.trackicn {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.trackImage img {
+    object-fit: contain;
+}
+
+.trackImage:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.trackInfo {
+    background-color: rgb(77, 77, 77);
+    width: 90%;
+    height: 95%;
+}
+
+.queueBtn {
+    background-color: rgba(77, 77, 77, 0);
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.queueBtn img {
+    width: 20px;
+}
+
+.signInBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d60017;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.page {
+    padding: 30px;
+    height: 93%;
+    width: 100%;
+    max-height: 100vh;
+    overflow: scroll;
+    position: relative;
+}
+
+.page>h1 {
+    padding: 0px 10px 10px 0;
+    border-bottom: 1px solid rgb(65, 65, 65);
+}
+
+.cardContainer {
+    justify-content: center;
+    margin-left: auto;
+    padding: 10px 0 0 0;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 250px;
+    width: 200px;
+    padding: 10px;
+    font-size: 13px;
+    gap: 10px;
+    position: relative;
+}
+
+.card:hover .playBtn {
+    opacity: 1;
+}
+
+.playBtn:hover {
+    cursor: pointer;
+}
+
+.playBtn {
+    opacity: 0;
+    width: 17%;
+    position: absolute;
+    bottom: 63px;
+    left: 16px;
+}
+
+.card img {
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    object-fit: contain;
+    text-wrap: wrap;
+}
+
+.sidebar .songList ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.seekbar {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+.currSeek {
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    top: -2px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    top: -4px;
+    left: 0%;
+    opacity: 0;
+    cursor: pointer;
+    transition: left 0.1s;
+}
+
+.playhead:hover .circle {
+    opacity: 1;
+}
+
+.currTime {
+    opacity: 0;
+    display: inline-block;
+}
+
+.totalDuration {
+    opacity: 0;
+    display: inline-block;
+}
+
+.playhead:hover .currTime {
+    opacity: 1;
+}
+
+.playhead:hover .totalDuration {
+    opacity: 1;
+}
+
+.hamburger{
+    display: none;
+}
+
+.crossBtn{
+    display: none;
+}
+.footer{
+    background-color: #2e2e2e;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: rgb(165, 165, 165);
+}
+
+@media (max-width: 1074px) {
+    .sidebar{
+        position:absolute;
+        left: -100%;
+        width:25vw;
+        transition:all 0.3s;
+        z-index: 1;
+    }
+    .main{
+        width: 100vw;
+    }
+    .signInBtn{
+        display:none;
+    }
+    .controls{
+        width: 20%;
+    }
+    .volume{
+        width: 20%;
+    }
+    .playhead{
+        width: 60%;
+    }
+    .queue{
+        display: none;
+    }
+    .hamburger{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .crossBtn{
+        display:flex;
+    }
+}
+
+@media (max-width:800px){
+    .playhead{
+        width: 10%;
+    }
+    .playhead .trackInfo{
+        width:0%;
+        display: none;
+    }
+    .playhead .trackImage{
+        width: 100%;
+    }
+    .controls{
+        width:45%;
+    }
+    .volume{
+        width: 45%;
+    }
+    .sidebar{
+        width: 40vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .sidebar{
+        width: 100vw;
+    }
+    .volume{
+        width:10%;
+    }
+    .volume .volumeIcon{
+        width:60%;
+    }
+    .controls{
+        width: 80%;
+    }
+    .volumeRange {
+        display: none;
+        
+    }
+}
