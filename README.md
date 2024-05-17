@@ -13,6 +13,6 @@
 - Javascript
 ## Demo
 - The site is hosted on a free domain for testing purposes using www.WebHostMost.com.
-- [AMC Clone - Aditya Bagri](amcaditya.freewebhostmost.com)
+- [Visit Apple Music Clone](http://amcaditya.freewebhostmost.com)
 ## Music used
 - The music used is not licensed and is just for experimental and educational purposes. This repositry in no form claims the ownership to the songs. All rights are reserved to the respective song owners. This is just for demonstartion purposes and does not promote the piracy of music.
