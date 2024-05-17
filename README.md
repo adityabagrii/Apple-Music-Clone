@@ -1,18 +1,22 @@
-# Apple-Music-Clone
+# Apple Music Clone
+
 ## Features
-- This is a Client Side Front End Clone of the website of Appple Music.
-- This code dynamically generates the cards of songs present in the main page using Javascript functionality, and automatically computes the song name the artist name and searches for its album cover
-- A proper web player is maintained with volume controls, seek controls, play pause controls, previous and next song controlls. By default the player is set in loop mode.
-- This website is made responsive to fit in all size of screens like laptops, mobile phones, tablets without losing any of the functionality.
-- The sidebar is automatically hidden if the screen size is small and a button is given to dynamically call the sidebar in and out.
-- Same is done for the volume controls.
-- Overflow of page is maintained using scroll bars.
-## Techstack
-- HTML
-- CSS
-- Javascript
+- **Client-Side Front End Clone**: This project is a front-end clone of the Apple Music website.
+- **Dynamic Content Generation**: JavaScript dynamically generates song cards on the main page, automatically computing the song name, artist name, and fetching the album cover.
+- **Web Player Functionality**: Includes a fully functional web player with volume controls, seek controls, play/pause controls, and previous/next song controls. The player is set to loop mode by default.
+- **Responsive Design**: The website is responsive and adapts to various screen sizes including laptops, mobile phones, and tablets without losing functionality.
+- **Sidebar Management**: The sidebar hides automatically on smaller screens, with a button to toggle the sidebar in and out.
+- **Volume Controls**: Similar functionality is applied to the volume controls.
+- **Page Overflow Management**: Page overflow is managed using scroll bars.
+
+## Tech Stack
+- **HTML**
+- **CSS**
+- **JavaScript**
+
 ## Demo
-- The site is hosted on a free domain for testing purposes using www.WebHostMost.com.
+- The site is hosted on a free domain for testing purposes using WebHostMost.com.
 - [Visit Apple Music Clone](http://amcaditya.freewebhostmost.com)
-## Music used
-- The music used is not licensed and is just for experimental and educational purposes. This repositry in no form claims the ownership to the songs. All rights are reserved to the respective song owners. This is just for demonstartion purposes and does not promote the piracy of music.
+
+## Music Used
+- The music used is not licensed and is solely for experimental and educational purposes. This repository does not claim ownership of the songs. All rights are reserved to the respective song owners. This project is for demonstration purposes only and does not promote music piracy.
